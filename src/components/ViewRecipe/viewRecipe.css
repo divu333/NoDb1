@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+body {font-family: 'Pacifico', cursive;}
+
+=======
+body {font-family: Arial, Helvetica, sans-serif;}
+>>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
+
+
+.viewRecipe {
+
+<<<<<<< HEAD
+    position: fixed;;
+    top:15%;
+    right:5%;
+    width:500px;
+    border-left: 2px solid #762474;
+height: 100vh;
+=======
+    position:fixed;
+    top:15%;
+    left:45%;
+    width:500px;
+>>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
+
+    
+}
+
+h1{
+    color: red;
+<<<<<<< HEAD
+    font-family: 'Pacifico', cursive;
+=======
+>>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
+}
+
+.viewRecipe li {
+    list-style-type: decimal;
+    text-align: left;
+        margin: 10px 0;
+      padding-left: 10px;
+<<<<<<< HEAD
+      font-size: 1rem;
+=======
+
+>>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
+}
+

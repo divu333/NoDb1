@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  display: block;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+.logo {
+    height: 120px;
+    width: 120px;
+    margin-left: 60px;
+    background: url(./logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ListWrapper{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 20vw;
+    height: 100vh;
+    padding: 5px 25px 5px 0;
+    background: white fixed no-repeat;
+    border-right: 2px solid #762474;
+}
+
+
+.navrBar-item{
+  display: block;
+  margin: 0;
+  padding: 15px;
+  height: 50px;
+  background:#FB8A3A;
+
+}
+
+
+.nav-bar li{
+  list-style-type: none;
+}
+
+.nav-bar li recipeName{
+  color: red;
+}
+<<<<<<< HEAD
+
+.recipe-div{
+align-items: right;
+
+
+}
+
+/******************/
+=======
+>>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
