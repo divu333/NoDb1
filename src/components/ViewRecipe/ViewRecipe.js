@@ -8,14 +8,11 @@ class ViewRecipe extends Component {
     this.state = {
       recipeBox: []
     };
-    this.getRecipeList = this.getRecipeList.bind(this);
-
     this.deleteRecipe = this.deleteRecipe.bind(this);
   }
 
   getRecipeList() {
     axios.get("/api/recipeBox").then(res => {
-      console.log(res.data);
       this.setState({
         recipeBox: res.data
       });
@@ -27,10 +24,10 @@ class ViewRecipe extends Component {
   }
 
   deleteRecipe() {
-    console.log("button works");
-    let promise = axios.delete("/api/updateRecipeBox/:id");
-    promise.then(() => {
-      this.getRecipeList();
+    axios.delete("/api/updateRecipeBox/id:").then(res => {
+      this.setState({
+        recipeBox: res.data
+      });
     });
   }
 
@@ -40,7 +37,7 @@ class ViewRecipe extends Component {
         <h1> Recipe List</h1>
         <ul>
           {this.state.recipeBox.map(recipeBox => (
-            <li key={recipeBox.id}>
+            <li key={recipeBox.id} id={recipeBox.id}>
               {" "}
               {recipeBox.recipeName}
               <button className="delete_button" onClick={this.deleteRecipe}>

@@ -10,14 +10,14 @@ app.use(cors());
 let nextId = 2;
 let recipeBox = [
   {
-    id: 1,
-    recipeName: "Chicken",
-    ingredients:
-      "Heat olive oil in a skillet over medium heat. Saute onion until lightly browned. Stir in garlic, curry powder, cinnamon, paprika, bay leaf, ginger, sugar and salt. Continue stirring for 2 minutes. Add chicken pieces, tomato paste, yogurt, and coconut milk. Bring to a boil, reduce heat, and simmer for 20 to 25 minutes."
-  },
+    id: 0,
 
+    recipeName: "Braised Pork Loin Chops",
+    ingredients:
+      "1 garlic clove,1 teaspoon rubbed sage, 4 boneless pork loin chops (1/2 inch thick and 4 ounces each),minced Mix first five ingredients; rub over both sides of pork chops. In a large nonstick skillet heat butter and oil over medium-high heat; brown chops on both sides. Remove from pan"
+  },
   {
-    id: 2,
+    id: 1,
     recipeName: "squash",
     ingredients:
       "Heat olive oil in a skillet over medium heat. Saute onion until lightly browned. Stir in garlic"
@@ -52,7 +52,7 @@ app.put("/api/updateRecipeBox/:id", (req, res) => {
 
 // Delete
 
-app.delete("/api/updateRecipeBox/:id", (req, res) => {
+app.delete("/api/updateRecipeBox/id:", (req, res) => {
   let index = null;
   recipeBox.forEach((recipe, i) => {
     if (recipe.id === Number(req.id)) index = i;

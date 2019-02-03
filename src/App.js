@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ViewRecipe from "./components/ViewRecipe/ViewRecipe";
 import axios from "axios";
-import form from "./components/form/form.css";
+
+import "./App.css";
+import "../src/components/form/form.css";
 
 class App extends Component {
   constructor() {

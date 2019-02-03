@@ -67,4 +67,6 @@ input[type="submit"]:hover {
 form {
   display: block;
   margin-top: 1em;
+  z-index: 1;
+  opacity: 100;
 }
