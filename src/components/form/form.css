@@ -1,105 +1,70 @@
-
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 * {
-    box-sizing: border-box;
-  }
-  
-<<<<<<< HEAD
-.h1-recipe{
+  box-sizing: border-box;
+}
+
+.h1-recipe {
   /* padding-left: 45%; */
-  padding-top: 120px;
+  padding-top: 110px;
   margin-left: 350px;
   display: block;
 }
 
-.container{
-    border-radius: 5px;
-    background-color:rgb(240, 243, 241);
-=======
-
-
-.container{
-    border-radius: 5px;
-    background-color: #f2f2f2;
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
-    padding: 20px;
-    /* width: 200%;
+.container {
+  border-radius: 5px;
+  background-color: rgb(240, 243, 241);
+  padding: 20px;
+  /* width: 200%;
     height: 400px;
     margin: 0 auto;  */
-<<<<<<< HEAD
-    position:left ;
-    margin-left: 250px;
-    margin-top:10%;
-    /* top:50%; */
-    width:500px;
-    text-align: center;
-=======
-    position:fixed;
-    top:15%;
-    left:45%;
-    width:500px;
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
+  position: left;
+  margin-left: 250px;
+  margin-top: 5%;
+  /* top:50%; */
+  width: 500px;
+  text-align: center;
+}
 
- }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
- 
-      
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
-      input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      }
+.formBtn {
+  width: 100px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 0 10px 0;
+  border: ipx solid green;
+  background: #bdcc5a;
+}
 
-      input[type=submit]:hover {
-        background-color: #45a049;
-      }
-      
-
-<<<<<<< HEAD
-.formBtn{       
+/* .cancelBtn{       
         width: 100px;
         font-size: 20px;
-        margin-top: 15px;
-        margin-right: 10px;
-=======
-.submitBtn{       
-        width: 350px;
-        font-size: 30px;
-        margin-top: 15px;
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
-        padding: 10px 0 10px 0;
-        border: ipx solid green;
-        background: #BDCC5A;
-      }
-      
-
-<<<<<<< HEAD
-      /* .cancelBtn{       
-        width: 100px;
-        font-size: 20px;
-=======
-      .cancelBtn{       
-        width: 350px;
-        font-size: 30px;
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
         margin-top: 15px;
         padding: 10px 0 10px 0;
         border: ipx solid black;
         background:#D0370E;
-<<<<<<< HEAD
       } */
-=======
-      }
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
 
-form{
-    display: block;
-    margin-top: 1em;
+form {
+  display: block;
+  margin-top: 1em;
 }

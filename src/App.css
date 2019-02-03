@@ -23,54 +23,38 @@
   color: #61dafb;
 }
 
-
-
 .logo {
-    height: 120px;
-    width: 120px;
-    margin-left: 60px;
-    background: url(./logo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  height: 120px;
+  width: 120px;
+  margin-left: 60px;
+  background: url(./logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.ListWrapper{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 20vw;
-    height: 100vh;
-    padding: 5px 25px 5px 0;
-    background: white fixed no-repeat;
-    border-right: 2px solid #762474;
+.ListWrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 20vw;
+  height: 100vh;
+  padding: 5px 25px 5px 0;
+  background: white fixed no-repeat;
+  border-right: 2px solid #762474;
 }
 
-
-.navrBar-item{
+.navrBar-item {
   display: block;
   margin: 0;
   padding: 15px;
   height: 50px;
-  background:#FB8A3A;
-
+  background: #fb8a3a;
 }
 
-
-.nav-bar li{
+.nav-bar li {
   list-style-type: none;
 }
 
-.nav-bar li recipeName{
+.nav-bar li recipeName {
   color: red;
 }
-<<<<<<< HEAD
-
-.recipe-div{
-align-items: right;
-
-
-}
-
-/******************/
-=======
->>>>>>> 9e94f940372d4b7ba07bed39503f6ce11475f2ac
