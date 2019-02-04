@@ -6,9 +6,9 @@ class ViewRecipe extends Component {
   constructor() {
     super();
     this.state = {
-      recipeBox: []
+      recipeBox: [],
+      id: ""
     };
-    this.deleteRecipe = this.deleteRecipe.bind(this);
   }
 
   getRecipeList() {
@@ -23,28 +23,31 @@ class ViewRecipe extends Component {
     this.getRecipeList();
   }
 
-  deleteRecipe() {
+  handleDelete = recipe => {
+    console.log(recipe);
+
     axios.delete("/api/updateRecipeBox/id:").then(res => {
-      this.setState({
-        recipeBox: res.data
-      });
+      this.getRecipeList();
     });
-  }
+  };
 
   render() {
     return (
       <div className="viewRecipe">
         <h1> Recipe List</h1>
         <ul>
-          {this.state.recipeBox.map(recipeBox => (
-            <li key={recipeBox.id} id={recipeBox.id}>
+          {this.state.recipeBox.map(recipe => (
+            <li key={recipe._id}>
               {" "}
-              {recipeBox.recipeName}
-              <button className="delete_button" onClick={this.deleteRecipe}>
+              {recipe.recipeName}
+              <button
+                className="delete_button"
+                onClick={() => this.handleDelete(recipe)}
+              >
                 X
               </button>
               <br /> <br />
-              {recipeBox.ingredients} <br /> <br />
+              {recipe.ingredients} <br /> <br />
             </li>
           ))}
         </ul>

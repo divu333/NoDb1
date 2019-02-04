@@ -47,7 +47,7 @@ class App extends Component {
             <br />
 
             <textarea
-              placeholder="Ingredients  "
+              placeholder="Recipe Here  "
               type="textarea"
               name="ingredients"
               onChange={e => {
